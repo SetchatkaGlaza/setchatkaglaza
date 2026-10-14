@@ -9,7 +9,7 @@
 
 <br>
 
-<a href="https://setchatkaglaza.github.io/"><img src="https://img.shields.io/badge/Сайт_студии-setchatkaglaza.github.io-8b6bff?style=for-the-badge" alt="Сайт студии"></a>
+<a href="[https://setchatkaglaza.github.io](https://setchatkaglaza.github.io/setchatkaglaza/)/"><img src="https://img.shields.io/badge/Сайт_студии-[setchatkaglaza.github.io](https://setchatkaglaza.github.io/setchatkaglaza/)-8b6bff?style=for-the-badge" alt="Сайт студии"></a>
 <a href="https://t.me/setchatka_glaza"><img src="https://img.shields.io/badge/Telegram-@setchatka__glaza-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 <a href="https://vk.ru/setchatka_glaza"><img src="https://img.shields.io/badge/VK-setchatka__glaza-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK"></a>
 <a href="mailto:Korepin.eil@yandex.ru"><img src="https://img.shields.io/badge/Email-Korepin.eil@yandex.ru-2fd9c9?style=for-the-badge" alt="Email"></a>
