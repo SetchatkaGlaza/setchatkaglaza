@@ -1,116 +1,77 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="SetchatkaGlaza Web Studio" width="460">
+<img src="assets/header.svg" alt="SetchatkaGlaza Web Studio" width="100%">
 
-### Сайты, на которые приятно смотреть и с которых приходят заявки
+<h3>Делаю сайты, на которые приятно смотреть и с которых приходят заявки</h3>
 
-Сайт-визитка веб-студии **SetchatkaGlaza**: услуги, портфолио и контакты в одной странице.
-Двуязычная (RU / EN), без сборки и фреймворков, на чистых HTML, CSS и JavaScript.
-
-[![Live](https://img.shields.io/badge/live-setchatkaglaza.github.io-8b6bff?style=for-the-badge)](https://setchatkaglaza.github.io/)
-[![License](https://img.shields.io/badge/license-MIT-2fd9c9?style=for-the-badge)](LICENSE)
-![HTML5](https://img.shields.io/badge/HTML5-e34f26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572b6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?style=flat-square&logo=github&logoColor=white)
-
-[Telegram](https://t.me/setchatka_glaza) · [ВКонтакте](https://vk.ru/setchatka_glaza) · [Email](mailto:Korepin.eil@yandex.ru) · [GitHub](https://github.com/SetchatkaGlaza)
+<a href="https://setchatkaglaza.github.io/"><img src="https://img.shields.io/badge/Сайт_студии-setchatkaglaza.github.io-8b6bff?style=for-the-badge" alt="Сайт"></a>
+<a href="https://t.me/setchatka_glaza"><img src="https://img.shields.io/badge/Telegram-@setchatka__glaza-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+<a href="https://vk.ru/setchatka_glaza"><img src="https://img.shields.io/badge/VK-setchatka__glaza-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK"></a>
+<a href="mailto:Korepin.eil@yandex.ru"><img src="https://img.shields.io/badge/Email-Korepin.eil@yandex.ru-2fd9c9?style=for-the-badge" alt="Email"></a>
 
 </div>
 
 ---
 
-## О проекте
+## 👁️ Привет, я Валерий
 
-Страница рассказывает, кто я, что делаю и как со мной связаться. Первый экран держится на нарисованном вручную силуэте замка в стилистике классического аниме: плоские грани света, густая чернота, зерно. Поверх него живёт фон из звёзд, которые тянутся к курсору.
+Я **веб-разработчик и дизайнер**, основатель студии **SetchatkaGlaza**. Придумываю, рисую, верстаю и запускаю сайты: от лендинга на один экран до интернет-магазина и многостраничного сайта компании.
 
-## Возможности
+Работаю один, поэтому вы общаетесь напрямую со мной, без менеджеров и пересказов. Пишу чистый, быстрый и адаптивный код и стараюсь, чтобы у каждого проекта был свой характер, а не шаблонный вид.
 
-- **Анимации без тормозов.** Один общий цикл `requestAnimationFrame`, плавное сглаживание курсора, все изменения DOM собраны в одном месте.
-- **Замок-фон** остаётся на месте при прокрутке, слегка смещается за курсором и мягко растворяется по мере скролла.
-- **Портфолио в рамках ноутбука и телефона.** Страница проекта сама прокручивается при наведении или когда блок в центре экрана.
-- **Услуги** в виде интерактивных вкладок с подробным описанием, управление мышью и стрелками.
-- **RU / EN** с запоминанием выбора.
-- **Адаптивность и доступность:** видимый фокус, `prefers-reduced-motion`, семантическая разметка.
-- **SEO и PWA-мелочи:** Open Graph, `robots.txt`, `sitemap.xml`, `favicon.ico`, SVG, Apple Touch, `site.webmanifest`, страница 404.
+> 💬 Нужен сайт? Напишите мне в [Telegram](https://t.me/setchatka_glaza): расскажите о задаче, и я отвечу с предложением по срокам и стоимости.
 
-## Портфолио
+## 🛠️ Чем занимаюсь
 
 <table>
 <tr>
-<td align="center"><a href="https://setchatkaglaza.github.io/pulse-athletic/"><img src="assets/shots/pulse-athletic.jpg" width="260"></a><br><b>Pulse Athletic</b><br>фитнес-клуб</td>
-<td align="center"><a href="https://setchatkaglaza.github.io/mokka-house/"><img src="assets/shots/mokka-house.jpg" width="260"></a><br><b>MOKKA HOUSE</b><br>кофейня</td>
-<td align="center"><a href="https://setchatkaglaza.github.io/elan-skin/"><img src="assets/shots/elan-skin.jpg" width="260"></a><br><b>ÉLAN Skin</b><br>косметика</td>
+<td width="33%" valign="top"><b>🚀 Лендинги</b><br>Одна страница, одна цель: заявка. Продуманная структура, анимации и адаптив под телефон.</td>
+<td width="33%" valign="top"><b>🛒 Интернет-магазины</b><br>Каталог, фильтры, корзина и оформление заказа без лишних шагов.</td>
+<td width="33%" valign="top"><b>🏢 Сайты под ключ</b><br>Корпоративные сайты и визитки из нескольких страниц, от дизайна до публикации.</td>
 </tr>
 <tr>
-<td align="center"><a href="https://setchatkaglaza.github.io/Forma-Build/"><img src="assets/shots/Forma-Build.jpg" width="260"></a><br><b>FORMA BUILD</b><br>строительство</td>
-<td align="center"><a href="https://setchatkaglaza.github.io/best-site-gym/"><img src="assets/shots/best-site-gym.jpg" width="260"></a><br><b>BEST Gym</b><br>фитнес-клуб</td>
-<td align="center"><a href="https://setchatkaglaza.github.io/nexora-digital-landing/"><img src="assets/shots/nexora-digital-landing.jpg" width="260"></a><br><b>Nexora Digital</b><br>digital-студия</td>
+<td valign="top"><b>🎨 Дизайн</b><br>Макеты, типографика, цвет, иконки и интерфейсы с собственным стилем.</td>
+<td valign="top"><b>🔎 SEO</b><br>Структура, скорость и разметка, чтобы сайт находили в поиске.</td>
+<td valign="top"><b>🧰 Поддержка</b><br>Правки, обновления и развитие сайта после запуска.</td>
 </tr>
 </table>
 
-## Структура
+## 🖼️ Портфолио
 
-```text
-.
-├── index.html               страница (RU / EN в одном файле)
-├── 404.html                 страница «не найдено»
-├── css/style.css            стили и дизайн-токены (:root)
-├── js/main.js               фон, анимации, вкладки, переключатель языка
-├── assets/
-│   ├── logo.png             логотип
-│   ├── favicon.ico / .svg   иконки сайта
-│   ├── apple-touch-icon.png, icon-192.png, icon-512.png
-│   ├── og-image.png         превью для соцсетей
-│   └── shots/               скриншоты проектов (десктоп и мобильная версия)
-├── scripts/screenshots.mjs  обновление скриншотов через Playwright
-├── .github/workflows/       автодеплой на GitHub Pages
-├── site.webmanifest, robots.txt, sitemap.xml
-└── LICENSE, package.json, .editorconfig, .gitignore
-```
+<table>
+<tr><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/pulse-athletic/"><img src="assets/portfolio/pulse-athletic.jpg" width="200" alt="Pulse Athletic"></a><br><b>Pulse Athletic</b><br><sub>Фитнес-клуб</sub><br><a href="https://setchatkaglaza.github.io/pulse-athletic/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/pulse-athletic">код</a></td><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/mokka-house/"><img src="assets/portfolio/mokka-house.jpg" width="200" alt="MOKKA HOUSE"></a><br><b>MOKKA HOUSE</b><br><sub>Кофейня</sub><br><a href="https://setchatkaglaza.github.io/mokka-house/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/mokka-house">код</a></td><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/elan-skin/"><img src="assets/portfolio/elan-skin.jpg" width="200" alt="ÉLAN Skin"></a><br><b>ÉLAN Skin</b><br><sub>Бренд косметики</sub><br><a href="https://setchatkaglaza.github.io/elan-skin/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/elan-skin">код</a></td><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/Forma-Build/"><img src="assets/portfolio/Forma-Build.jpg" width="200" alt="FORMA BUILD"></a><br><b>FORMA BUILD</b><br><sub>Строительная компания</sub><br><a href="https://setchatkaglaza.github.io/Forma-Build/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/Forma-Build">код</a></td></tr>
+<tr><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/best-site-gym/"><img src="assets/portfolio/best-site-gym.jpg" width="200" alt="BEST Gym"></a><br><b>BEST Gym</b><br><sub>Фитнес-клуб</sub><br><a href="https://setchatkaglaza.github.io/best-site-gym/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/best-site-gym">код</a></td><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/les-trans-website/"><img src="assets/portfolio/les-trans-website.jpg" width="200" alt="Перевозка леса"></a><br><b>Перевозка леса</b><br><sub>Транспортная компания</sub><br><a href="https://setchatkaglaza.github.io/les-trans-website/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/les-trans-website">код</a></td><td align="center" width="25%"><a href="https://setchatkaglaza.github.io/nexora-digital-landing/"><img src="assets/portfolio/nexora-digital-landing.jpg" width="200" alt="Nexora Digital"></a><br><b>Nexora Digital</b><br><sub>Digital-студия</sub><br><a href="https://setchatkaglaza.github.io/nexora-digital-landing/">сайт</a> · <a href="https://github.com/SetchatkaGlaza/nexora-digital-landing">код</a></td><td align="center" width="25%"><br><br><a href="https://github.com/SetchatkaGlaza?tab=repositories"><b>Все проекты<br>на GitHub</b></a><br><sub>там их больше</sub></td></tr>
+</table>
 
-## Быстрый старт
+<sub>Все проекты концептуальные: на них я оттачиваю дизайн, вёрстку и интерактив. Нажмите на превью, чтобы открыть живой сайт.</sub>
 
-```bash
-git clone https://github.com/SetchatkaGlaza/setchatkaglaza.github.io.git
-cd setchatkaglaza.github.io
-npm start            # локальный сервер, либо откройте index.html любым статическим сервером
-```
+## ⚙️ Технологии
 
-## Публикация
+<p><img src="https://img.shields.io/badge/HTML5-e34f26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572b6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/Vite-646cff?style=flat-square&logo=vite&logoColor=white" alt="Vite"> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"> <img src="https://img.shields.io/badge/PostgreSQL-4169e1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/PHP-777bb4?style=flat-square&logo=php&logoColor=white" alt="PHP"> <img src="https://img.shields.io/badge/C%23-512bd4?style=flat-square&logo=dotnet&logoColor=white" alt="C%23"> <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white" alt="Git"> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></p>
 
-1. Репозиторий должен называться `setchatkaglaza.github.io`.
-2. **Settings → Pages → Source: GitHub Actions.**
-3. Каждый push в `main` запускает деплой через `.github/workflows/pages.yml`.
+## 🧭 Как мы будем работать
 
-Другое имя репозитория? Поправьте адрес в `og:image` (`index.html`), `robots.txt` и `sitemap.xml`.
+<table>
+<tr>
+<td align="center" width="25%"><b>1. Обсуждение</b><br><sub>Вы рассказываете о задаче, я называю решение, сроки и стоимость</sub></td>
+<td align="center" width="25%"><b>2. Дизайн</b><br><sub>Показываю концепцию и согласовываю до разработки</sub></td>
+<td align="center" width="25%"><b>3. Разработка</b><br><sub>Верстаю и программирую, показываю промежуточные результаты</sub></td>
+<td align="center" width="25%"><b>4. Запуск</b><br><sub>Публикую сайт и остаюсь на связи для правок</sub></td>
+</tr>
+</table>
 
-## Обновление скриншотов
+## 📬 Контакты
 
-```bash
-npm install
-npx playwright install chromium
-npm run shots
-```
+<div align="center">
 
-## Настройка
+<a href="https://t.me/setchatka_glaza"><img src="https://img.shields.io/badge/Написать_в_Telegram-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+<a href="https://vk.ru/setchatka_glaza"><img src="https://img.shields.io/badge/ВКонтакте-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK"></a>
+<a href="mailto:Korepin.eil@yandex.ru"><img src="https://img.shields.io/badge/Почта-Korepin.eil@yandex.ru-2fd9c9?style=for-the-badge" alt="Email"></a>
 
-| Что менять | Где |
-|---|---|
-| Цвета и шрифты | переменные `:root` в `css/style.css` |
-| Тексты и контакты | `index.html`, у каждого текста есть версии `.ru` и `.en` |
-| Новый проект | скопируйте блок `<article class="cs">` и добавьте имя в `scripts/screenshots.mjs` |
+<br><br>
 
-## Контакты
+<a href="https://setchatkaglaza.github.io/"><img src="assets/logo.png" width="280" alt="SetchatkaGlaza Web Studio"></a>
 
-**Валерий Корепин** · SetchatkaGlaza Web Studio
-Telegram [@setchatka_glaza](https://t.me/setchatka_glaza) · [ВКонтакте](https://vk.ru/setchatka_glaza) · [Korepin.eil@yandex.ru](mailto:Korepin.eil@yandex.ru)
+<sub>© 2026 SetchatkaGlaza Web Studio · Валерий Корепин</sub>
 
-## English
-
-A bilingual (RU / EN) business-card website for the SetchatkaGlaza web studio, built with plain HTML, CSS and JavaScript, no build step. It features a hand-drawn cel-shaded castle background, an interactive starfield, device-framed portfolio previews and tabbed services. Deploys to GitHub Pages via the included workflow.
-
-## Лицензия
-
-[MIT](LICENSE) © 2026 Valerii Korepin
-# setchatkaglaza
+</div>
