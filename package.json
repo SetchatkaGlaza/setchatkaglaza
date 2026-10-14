@@ -1,0 +1,13 @@
+{
+  "name": "setchatkaglaza-site",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Business-card site of SetchatkaGlaza Web Studio",
+  "homepage": "https://setchatkaglaza.github.io/",
+  "repository": { "type": "git", "url": "git+https://github.com/SetchatkaGlaza/setchatkaglaza.github.io.git" },
+  "author": "Valerii Korepin <Korepin.eil@yandex.ru> (https://github.com/SetchatkaGlaza)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": { "start": "npx --yes serve .", "shots": "node scripts/screenshots.mjs" },
+  "devDependencies": { "playwright": "^1.48.0" }
+}

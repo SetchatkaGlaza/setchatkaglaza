@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://setchatkaglaza.github.io/sitemap.xml
