@@ -131,4 +131,3 @@
 <sub>© 2026 SetchatkaGlaza Web Studio. Валерий Корепин.</sub>
 
 </div>
-<<<<<<< HEAD
