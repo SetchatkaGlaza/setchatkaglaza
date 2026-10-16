@@ -12,11 +12,7 @@
   setLang(lang); $('#lg').onclick = () => setLang(root.lang === 'ru' ? 'en' : 'ru');
 
   /* Elements and state */
-<<<<<<< HEAD
   const cv = $('#bg'), cx = cv.getContext('2d'), glow = $('.cur'), logo = $('.lg img'), nav = $('nav'), bar = $('.pg');
-=======
-  const cv = $('#bg'), cx = cv.getContext('2d'), glow = $('.cur'), logo = $('.lg img'), cast = $('.cast'), nav = $('nav'), bar = $('.pg');
->>>>>>> c43ae845f0d0d04d30a11b85e330ae70567d81d2
   const ptr = { x: -999, y: -999, nx: .5, ny: .5 }, ease = { x: -999, y: -999, nx: .5, ny: .5 };
   let W, H, P = [], dpr = Math.min(devicePixelRatio || 1, 2), fine = false;
 
@@ -48,27 +44,15 @@
     }
   };
 
-<<<<<<< HEAD
   /* One loop: eased pointer, logo tilt, scroll progress — all DOM writes happen here */
-=======
-  /* One loop: eased pointer, castle parallax and fade, scroll progress — all DOM writes happen here */
->>>>>>> c43ae845f0d0d04d30a11b85e330ae70567d81d2
   let lastNav = null;
   const tick = () => {
     for (const k of ['x', 'y', 'nx', 'ny']) ease[k] += (ptr[k] - ease[k]) * .09;
     if (fine) {
       glow.style.opacity = 1; glow.style.transform = `translate3d(${ease.x}px,${ease.y}px,0)`;
-<<<<<<< HEAD
       logo.style.transform = `rotateY(${((ease.nx - .5) * 14).toFixed(2)}deg) rotateX(${((.5 - ease.ny) * 10).toFixed(2)}deg)`;
     }
     const y = scrollY;
-=======
-      cast.style.setProperty('--px', ((.5 - ease.nx) * 28).toFixed(2)); cast.style.setProperty('--py', ((.5 - ease.ny) * 18).toFixed(2));
-      logo.style.transform = `rotateY(${((ease.nx - .5) * 14).toFixed(2)}deg) rotateX(${((.5 - ease.ny) * 10).toFixed(2)}deg)`;
-    }
-    const y = scrollY, p = Math.min(1, y / (H * .9));
-    cast.style.setProperty('--co', (1 - .78 * p).toFixed(3));
->>>>>>> c43ae845f0d0d04d30a11b85e330ae70567d81d2
     bar.style.transform = `scaleX(${(y / Math.max(1, root.scrollHeight - H)).toFixed(4)})`;
     const sc = y > 20; if (sc !== lastNav) { nav.classList.toggle('sc', sc); lastNav = sc; }
     stars();
@@ -76,7 +60,6 @@
   };
   if (calm) { stars(); } else requestAnimationFrame(tick);
 
-<<<<<<< HEAD
 
   /* Hero video: right file for the screen, pauses off-screen, calm fallbacks */
   (() => {
@@ -101,8 +84,6 @@
     v.addEventListener('canplay', () => v.classList.add('ok'), { once: true });
   })();
 
-=======
->>>>>>> c43ae845f0d0d04d30a11b85e330ae70567d81d2
   /* Reveal on scroll */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   $$('.rv').forEach(el => io.observe(el));
