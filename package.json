@@ -8,6 +8,6 @@
   "author": "Valerii Korepin <Korepin.eil@yandex.ru> (https://github.com/SetchatkaGlaza)",
   "license": "MIT",
   "type": "module",
-  "scripts": { "start": "npx --yes serve .", "shots": "node scripts/screenshots.mjs" },
+  "scripts": { "start": "npx --yes serve .", "shots": "node scripts/screenshots.mjs", "shots:new": "node scripts/screenshots-new.mjs", "check": "node scripts/check-links.mjs" },
   "devDependencies": { "playwright": "^1.48.0" }
 }

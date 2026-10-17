@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 
 const BASE = 'https://setchatkaglaza.github.io/';
-const SITES = ['pulse-athletic', 'mokka-house', 'elan-skin', 'Forma-Build', 'best-site-gym', 'les-trans-website', 'nexora-digital-landing'];
+const SITES = ['pulse-athletic', 'mokka-house', 'elan-skin', 'Forma-Build', 'best-site-gym', 'les-trans-website', 'nexora-digital-landing', 'kotis-auto-website', 'raschyoska-site', 'shumaher-site', 'mobil24-site'];
 const VIEWS = [
   { suffix: '', width: 1440, height: 900, scale: 960 / 1440, clip: { x: 0, y: 0, width: 1440, height: 3200 } },
   { suffix: '-m', width: 390, height: 844, scale: 360 / 390, clip: { x: 0, y: 0, width: 390, height: 1700 } },
