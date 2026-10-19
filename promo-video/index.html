@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SetchatkaGlaza — Promo Film</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg:#06060b;
+  --white:#f3f2fb;
+  --muted:#a09eb9;
+  --purple:#8b6bff;
+  --cyan:#2fd9c9;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg)}
+body{font-family:Manrope,Arial,sans-serif;color:var(--white)}
+.stage{width:1920px;height:1080px;position:relative;overflow:hidden;background:
+radial-gradient(ellipse at 20% 40%,#20153d 0,transparent 48%),
+radial-gradient(ellipse at 85% 65%,#07312f 0,transparent 42%),#06060b}
+.grid{position:absolute;inset:-50%;opacity:.16;background-image:
+linear-gradient(#a79aff18 1px,transparent 1px),
+linear-gradient(90deg,#a79aff18 1px,transparent 1px);
+background-size:80px 80px;transform:perspective(800px) rotateX(58deg) scale(1.5)}
+.glow{position:absolute;width:700px;height:700px;border-radius:50%;
+filter:blur(100px);opacity:.22;pointer-events:none}
+.g1{background:var(--purple);left:-200px;top:100px}
+.g2{background:var(--cyan);right:-220px;bottom:-240px}
+.noise{position:absolute;inset:0;opacity:.07;pointer-events:none;
+background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+.scene{position:absolute;inset:0;padding:90px 130px;opacity:0;visibility:hidden;transform:scale(1.025);transition:opacity .8s ease,transform 1.2s cubic-bezier(.2,.7,.2,1),visibility .8s}
+.scene.active{opacity:1;visibility:visible;transform:scale(1)}
+.kicker{font-size:19px;letter-spacing:7px;text-transform:uppercase;color:var(--cyan);font-weight:800}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-3px}
+h1{font-size:92px;line-height:1.16;font-weight:700}
+h2{font-size:72px;line-height:1.2;font-weight:600}
+.grad{background:linear-gradient(100deg,#fff 5%,#b7a5ff 48%,#52e7d6 95%);color:transparent;background-clip:text;-webkit-background-clip:text}
+.sub{font-size:28px;line-height:1.65;color:#c0bdd6;max-width:900px;margin-top:30px}
+.brand{position:absolute;top:55px;left:75px;display:flex;align-items:center;gap:17px;font-size:17px;letter-spacing:3px;font-weight:800}
+.brand img{width:48px;height:48px;object-fit:contain}
+.counter{position:absolute;right:80px;bottom:55px;color:#77748e;font-size:15px;letter-spacing:4px}
+.rule{width:95px;height:4px;background:linear-gradient(90deg,var(--purple),var(--cyan));margin:32px 0;border-radius:4px}
+.hero-center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100%;padding-bottom:30px}
+.hero-center .logo{width:190px;height:105px;object-fit:contain;margin-bottom:42px;filter:drop-shadow(0 0 35px #8b6bff55)}
+.hero-center h1{font-size:90px}
+.hero-center .sub{max-width:950px}
+.orb{position:absolute;width:460px;height:460px;border-radius:50%;border:1px solid #8b6bff40;right:230px;top:285px;box-shadow:0 0 100px #8b6bff13,inset 0 0 100px #2fd9c910}
+.orb:before,.orb:after{content:"";position:absolute;inset:35px;border:1px solid #2fd9c930;border-radius:50%;transform:rotateX(65deg) rotate(30deg)}
+.orb:after{inset:80px;transform:rotateX(65deg) rotate(-35deg)}
+.orb img{position:absolute;width:185px;height:100px;object-fit:contain;inset:0;margin:auto;filter:drop-shadow(0 0 28px #8b6bff70)}
+.intro-copy{position:absolute;left:145px;top:265px;width:1050px}
+.intro-copy .kicker{margin-bottom:28px}
+.intro-copy .sub{max-width:850px}
+.pills{display:flex;gap:13px;margin-top:35px;flex-wrap:wrap}
+.pill{border:1px solid #ffffff20;background:#ffffff08;padding:13px 21px;border-radius:50px;font-size:17px;color:#dedbed}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}
+.section-head .kicker{margin-bottom:20px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.project{height:580px;position:relative;overflow:hidden;border-radius:24px;border:1px solid #ffffff20;background:linear-gradient(150deg,#171523,#0b0b12);padding:15px;box-shadow:0 30px 80px #0008}
+.project .browser{height:100%;overflow:hidden;border-radius:13px;background:#111}
+.browserbar{height:30px;background:#1b1924;display:flex;gap:6px;align-items:center;padding-left:13px}
+.browserbar i{width:7px;height:7px;background:#ffffff60;border-radius:50%}
+.browser img{width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top;display:block}
+.project .label{position:absolute;bottom:15px;left:15px;right:15px;padding:22px 18px 16px;background:linear-gradient(transparent,#08080cf2 30%);border-radius:0 0 13px 13px}
+.label strong{font-size:22px;display:block}
+.label small{font-size:13px;color:#b4b0c9;display:block;margin-top:6px}
+.project:nth-child(1){transform:translateY(15px)}
+.project:nth-child(2){transform:translateY(-8px)}
+.project:nth-child(3){transform:translateY(25px)}
+.project:nth-child(1) .browser img{object-position:top}
+.project:nth-child(2) .browser img{object-position:top}
+.project:nth-child(3) .browser img{object-position:top}
+.work-footer{margin-top:32px;display:flex;justify-content:space-between;color:#a09eb9;font-size:17px;letter-spacing:1px}
+.work-footer span:last-child{color:var(--cyan)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;height:100%}
+.device-wrap{position:relative;height:650px;display:flex;align-items:center;justify-content:center}
+.device{width:730px;height:480px;border:2px solid #ffffff35;border-radius:24px;background:#111019;padding:13px;box-shadow:0 40px 110px #000b,0 0 75px #8b6bff16;transform:perspective(1300px) rotateY(-10deg) rotateX(3deg)}
+.device .screen{width:100%;height:100%;border-radius:12px;overflow:hidden;background:#08080b}
+.device .screen img{width:100%;height:100%;object-fit:cover;object-position:top}
+.phone{position:absolute;width:180px;height:350px;right:30px;bottom:10px;border:5px solid #343140;border-radius:28px;background:#101018;padding:7px;box-shadow:0 30px 70px #000b;transform:rotate(5deg)}
+.phone .screen{width:100%;height:100%;overflow:hidden;border-radius:19px}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.capabilities{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:34px}
+.cap{padding:17px 19px;border:1px solid #ffffff19;border-radius:14px;background:#ffffff06;font-size:17px}
+.cap b{color:var(--cyan);margin-right:8px}
+.big-quote{font-size:79px;line-height:1.3;letter-spacing:-3px;max-width:1450px}
+.big-quote em{font-style:normal;color:var(--cyan)}
+.end-layout{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}
+.end-layout .logo{width:130px;height:80px;object-fit:contain;margin-bottom:24px}
+.end-layout h2{font-size:70px}
+.end-layout .sub{margin-top:18px}
+.contact{margin-top:38px;display:flex;gap:18px;align-items:center;justify-content:center}
+.contact span{padding:16px 24px;border-radius:50px;border:1px solid #ffffff25;background:#ffffff09;font-size:19px}
+.contact .primary{background:linear-gradient(100deg,var(--purple),var(--cyan));color:#08080d;border:0;font-weight:800}
+.url{margin-top:30px;font-size:21px;letter-spacing:1px;color:#bcb7d4}
+.progress{position:absolute;left:0;bottom:0;height:4px;width:100%;background:#ffffff12}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--cyan))}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="grid"></div><div class="glow g1"></div><div class="glow g2"></div><div class="noise"></div>
+  <div class="brand"><img src="../assets/logo.png"><span>WEB STUDIO</span></div>
+  <div class="counter" id="counter">01 / 06</div>
+  <div class="progress"><i id="progress"></i></div>
+
+  <section class="scene active" data-duration="5">
+    <div class="hero-center">
+      <img class="logo" src="../assets/logo.png">
+      <div class="kicker">Independent digital studio</div>
+      <h1 style="margin-top:24px">Setchatka<span class="grad">Glaza</span></h1>
+      <div class="rule"></div>
+      <p class="sub">Цифровые решения, которые превращают идеи в работающие сайты.</p>
+    </div>
+  </section>
+
+  <section class="scene" data-duration="5">
+    <div class="intro-copy">
+      <div class="kicker">01 — Your digital presence</div>
+      <h1>Сайт — это<br><span class="grad">первое впечатление.</span></h1>
+      <p class="sub">Продуманный дизайн. Чистая разработка. Детали, которые хочется рассматривать.</p>
+      <div class="pills"><span class="pill">Дизайн</span><span class="pill">Разработка</span><span class="pill">Анимация</span><span class="pill">Запуск</span></div>
+    </div>
+    <div class="orb"><img src="../assets/logo.png"></div>
+  </section>
+
+  <section class="scene" data-duration="5">
+    <div class="section-head">
+      <div><div class="kicker">02 — Selected projects</div><h2>Идеи в <span class="grad">цифре.</span></h2></div>
+      <p style="color:#a09eb9;font-size:19px;max-width:400px;line-height:1.6">Разные задачи. Разные индустрии. Индивидуальный подход.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><img src="../assets/shots/mokka-house.jpg"></div><div class="label"><strong>MOKKA HOUSE</strong><small>Кофейня · Digital experience</small></div></article>
+      <article class="project"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><img src="../assets/shots/Forma-Build.jpg"></div><div class="label"><strong>FORMA BUILD</strong><small>Архитектура · Corporate website</small></div></article>
+      <article class="project"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><img src="../assets/shots/elan-skin.jpg"></div><div class="label"><strong>ÉLAN SKIN</strong><small>Beauty · Premium landing</small></div></article>
+    </div>
+    <div class="work-footer"><span>SELECTED WORKS / 2026</span><span>DESIGN THAT HAS A PURPOSE ↗</span></div>
+  </section>
+
+  <section class="scene" data-duration="5">
+    <div class="split">
+      <div>
+        <div class="kicker">03 — Every detail matters</div>
+        <h2>Красиво.<br><span class="grad">Удобно.</span><br>По делу.</h2>
+        <p class="sub">Сайты, которые одинаково уверенно выглядят на большом экране и на смартфоне.</p>
+        <div class="capabilities">
+          <div class="cap"><b>↗</b> Адаптивный дизайн</div>
+          <div class="cap"><b>↗</b> Интерактивные элементы</div>
+          <div class="cap"><b>↗</b> Быстрая загрузка</div>
+          <div class="cap"><b>↗</b> От идеи до запуска</div>
+        </div>
+      </div>
+      <div class="device-wrap">
+        <div class="device"><div class="screen"><img src="../assets/shots/pulse-athletic.jpg"></div></div>
+        <div class="phone"><div class="screen"><img src="../assets/shots/pulse-athletic-m.jpg"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene" data-duration="5">
+    <div class="hero-center">
+      <div class="kicker">One idea. One clear direction.</div>
+      <div class="rule"></div>
+      <p class="big-quote">От первой идеи<br>до <em>готового продукта.</em></p>
+      <p class="sub">Ты общаешься напрямую с разработчиком. Каждый проект создаётся под свою задачу.</p>
+    </div>
+  </section>
+
+  <section class="scene" data-duration="5">
+    <div class="end-layout">
+      <img class="logo" src="../assets/logo.png">
+      <div class="kicker">Let's build something remarkable</div>
+      <h2 style="margin-top:20px">Есть идея?<br><span class="grad">Создадим сайт.</span></h2>
+      <p class="sub">SetchatkaGlaza · Веб-разработка и дизайн</p>
+      <div class="contact"><span class="primary">Обсудить проект</span><span>Telegram · @setchatka_glaza</span></div>
+      <div class="url">setchatkaglaza.github.io/setchatkaglaza/</div>
+    </div>
+  </section>
+</div>
+<script>
+const scenes=[...document.querySelectorAll('.scene')];
+const durations=scenes.map(s=>Number(s.dataset.duration||5));
+const total=durations.reduce((a,b)=>a+b,0);
+const counter=document.getElementById('counter');
+const progress=document.getElementById('progress');
+let started=performance.now(),last=-1;
+function tick(now){
+  const elapsed=((now-started)/1000)%total;
+  let sum=0,index=0;
+  for(let i=0;i<durations.length;i++){if(elapsed<sum+durations[i]){index=i;break;}sum+=durations[i];}
+  if(index!==last){
+    scenes.forEach((s,i)=>s.classList.toggle('active',i===index));
+    counter.textContent=String(index+1).padStart(2,'0')+' / '+String(scenes.length).padStart(2,'0');
+    last=index;
+  }
+  progress.style.width=(elapsed/total*100)+'%';
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+</script>
+</body>
+</html>
